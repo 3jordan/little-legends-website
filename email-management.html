@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Management - Little Legends Daycare</title>
+    <link rel="stylesheet" type="text/css" href="email-style.css">
+</head>
+<body>
+    <!-- Navigation menu (you can include this if you want to allow users to navigate back) -->
+    <nav>
+        <ul>
+            <li><a href="little-legends-website.html">Home</a></li>
+            <li><a href="about-me-ll.html">About Us</a></li>
+            <!-- Add more navigation links for other pages -->
+            <li><a href="email-management.html">Email Management</a></li> <!-- Link to the email management system (active) -->
+        </ul>
+    </nav>
+
+    <!-- Email Management System Content -->
+    <div class="container">
+        <!-- Email management system content, including the form, list, and controls -->
+        <!-- Use the HTML and CSS provided earlier for the email management system -->
+        <h1>Email Database</h1>
+        <form id="emailForm">
+            <!-- Add Contact Form Elements -->
+            <!-- Name Input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            
+            <!-- Email Input -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+            
+            <!-- Phone Input -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone">
+            
+            <!-- Error Message -->
+            <span class="error" id="emailError"></span>
+            
+            <!-- Submit Button -->
+            <button type="submit" class="subscribe-button">Add Contact</button>
+        </form>
+        
+        <!-- Filter and Search Controls -->
+        <div class="filter-search">
+            <label for="filterSelect">Filter by Email Domain:</label>
+            <select id="filterSelect">
+                <option value="all">All</option>
+                <option value="gmail.com">gmail.com</option>
+                <!-- Add more options for other email domains if needed -->
+            </select>
+            
+            <label for="searchInput">Search:</label>
+            <input type="text" id="searchInput">
+        </div>
+        
+        <!-- View List Button -->
+        <button id="viewListBtn" class="view-list-button">View List</button>
+        
+        <!-- Users List -->
+        <h2>Users List</h2>
+        <ul id="emailList" class="user-list"></ul>
+    </div>
+
+    <!-- Include your JavaScript file for the email management system -->
+    <script src="email-function.js"></script>
+</body>
+</html>
